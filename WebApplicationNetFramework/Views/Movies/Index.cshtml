@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplicationNetFramework.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>List of Movies</h1>
+
+<div class="col-2"><h1><a class="btn btn-primary" href="@Url.Action("NewMovie", "Movies")">New Movie</a></h1></div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Movie Name</th>
+            <th>Genre</th>
+            <th>Number Of Copies</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Name</td>
+                <td>@movie.Genre</td>
+                <td>@movie.Copies</td>
+                <td>
+                    <a href="@Url.Action("Update", "Movies", new { @movie.Id} )"
+                       class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("Delete", "Movies", new {@movie.Id} )"
+                       class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+<br />
+<div>
+    <h3 class="">Add movies from file:</h3>
+</div>
+
+@using (Html.BeginForm("Upload", "Movies", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" id="file" />
+    <input class="btn btn-success" type="submit" value="Upload File" />
+     
+    <p class="text-danger"> @TempData["message"]</p>
+    
+}
+

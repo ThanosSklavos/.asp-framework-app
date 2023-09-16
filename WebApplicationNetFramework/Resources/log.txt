@@ -1,0 +1,32 @@
+
+
+2023-09-18 00:00:50 - Movie ADDED: 42 test1 test1 Copies:5 
+
+2023-09-18 00:00:50 - Movie ADDED: 43 test2 test2 Copies:4 
+
+2023-09-18 00:00:50 - Movie ADDED: 44 test3 test3 Copies:4 
+
+2023-09-18 00:00:50 - Movie ADDED: 45 test4 test4 Copies:90 
+
+2023-09-18 00:02:48 - Movie ADDED: 46 test1 test1 Copies:5 
+
+2023-09-18 00:02:48 - Movie ADDED: 47 test2 test2 Copies:4 
+
+2023-09-18 00:02:48 - Movie ADDED: 48 test3 test3 Copies:4 
+
+2023-09-18 00:02:48 - Movie ADDED: 49 test4 test4 Copies:90 
+
+2023-09-18 00:03:13 - Movie ADDED: 50 test1 test1 Copies:5 
+
+2023-09-18 00:03:13 - Movie ADDED: 51 test2 test2 Copies:4 
+
+2023-09-18 00:03:13 - Movie ADDED: 52 test3 test3 Copies:4 
+
+2023-09-18 00:03:13 - Movie ADDED: 53 test4 test4 Copies:90 
+
+2023-09-18 00:03:24 - Movie ADDED: 54 test1 test1 Copies:5 
+
+2023-09-18 00:03:24 - Movie ADDED: 55 test2 test2 Copies:4 
+
+2023-09-18 00:05:32 - ERROR: Movie named test1 already exists 
+

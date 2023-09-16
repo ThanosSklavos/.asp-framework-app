@@ -1,0 +1,38 @@
+﻿@model IEnumerable<WebApplicationNetFramework.Models.Customer>
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Customers</h1>
+
+
+
+@if (@Model.Count() == 0)
+{
+    <h2>No customers yet</h2>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Discount Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cust in Model)
+            {
+                <tr>
+                    <td><a href="@Url.Action("Details", "Customers", new { id = cust.Id })">@cust.Id @cust.Name @cust.Lastname</td>
+@*                    <td>@cust.MembershipType.Name</td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+

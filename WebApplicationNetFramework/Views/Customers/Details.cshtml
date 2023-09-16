@@ -1,0 +1,32 @@
+﻿@model WebApplicationNetFramework.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<h2>@Model.Name @Model.Lastname</h2>
+<h3>@Model.Details</h3>
+
+<ul>
+    <li>@Model.MembershipType.Name </li>
+
+    @if (Model.Birthday != null)
+    {
+        <li>
+            BirthDay:
+            @Model.Birthday.Value.Day/
+            @Model.Birthday.Value.Month/
+            @Model.Birthday.Value.Year
+
+        </li>
+    }
+
+</ul>
+
+<h3><a class="btn btn-outline-info" href="@Url.Action("Index", "Customers")">Baaaaaaaaack</a></h3>
+
+
+
+

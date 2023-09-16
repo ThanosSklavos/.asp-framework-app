@@ -1,0 +1,25 @@
+﻿@*@model WebApplicationNetFramework.Models.Movie*@
+@model List<WebApplicationNetFramework.Models.Movie>
+
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ 
+    var movie1 = new WebApplicationNetFramework.Models.Movie { Id = 10, Name = " the MOvie" };
+}
+
+<h1>List of Movies</h1>
+
+<ul>
+    @foreach (var movie in Model)
+    {
+        <li class="mt-2">ID: @movie.Id Name: @movie.Name <a class="btn btn-danger" href="#"> Click me to make nothing happen!</a></li>
+        
+        
+    }
+        <li class="mt-2">ID: @movie1.Id Name: @movie1.Name <a class="btn btn-danger" href="#"> Click me to make nothing happen!</a></li>
+
+</ul>
+
