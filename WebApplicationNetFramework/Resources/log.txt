@@ -30,3 +30,5 @@
 
 2023-09-18 00:05:32 - ERROR: Movie named test1 already exists 
 
+2023-09-18 00:31:06 - ERROR: Movie named test1 already exists 
+

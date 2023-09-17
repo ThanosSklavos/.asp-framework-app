@@ -8,7 +8,7 @@ namespace WebApplicationNetFramework.Utilities
 {
     public class CustomLogger
     {
-        readonly static string relativePath = "Resources/log1.txt";
+        readonly static string relativePath = "Resources/log.txt";
         readonly string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
 
         public void Log(string message)
