@@ -126,3 +126,6 @@ D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetF
 D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetFramework\obj\Debug\WebApplicationNetFramework.Migrations.test.resources
 D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetFramework\obj\Debug\WebApplicationNetFramework.Migrations.addedMovieClass.resources
 D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetFramework\obj\Debug\WebApplicationNetFramework.Migrations.addedCopiesPropInMovies.resources
+D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetFramework\obj\Debug\WebApplicationNetFramework.Migrations.addedIsFirstLogin.resources
+D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetFramework\obj\Debug\WebApplicationNetFramework.Migrations.addedIsFirstLoginRemovedAddedToRegViewModel.resources
+D:\Programming\Coding\workspace\C#\WebApplicationNetFramework\WebApplicationNetFramework\obj\Debug\WebApplicationNetFramework.Migrations.addedHasLoggedinbefore.resources

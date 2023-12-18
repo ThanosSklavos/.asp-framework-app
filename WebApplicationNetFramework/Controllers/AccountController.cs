@@ -80,6 +80,16 @@ namespace WebApplicationNetFramework.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    var user = await UserManager.FindByEmailAsync(model.Email);
+                    var resetPassvm = new ResetPasswordViewModel() { Password = model.Password, Id = user.Id };
+                    if (!user.HasLoggedInBefore) 
+                    {
+
+                       /* user.HasLoggedInBefore = true;*/
+                        /*await UserManager.UpdateAsync(user);*/
+
+                        return View("/Views/Account/ChangePassword.cshtml", resetPassvm);
+                    }
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -91,6 +101,7 @@ namespace WebApplicationNetFramework.Controllers
                     return View(model);
             }
         }
+
 
         //
         // GET: /Account/VerifyCode
@@ -254,7 +265,7 @@ namespace WebApplicationNetFramework.Controllers
             {
                 return View(model);
             }
-            var user = await UserManager.FindByNameAsync(model.Email);
+            var user = await UserManager.FindByNameAsync(model.Id);
             if (user == null)
             {
                 // Don't reveal that the user does not exist

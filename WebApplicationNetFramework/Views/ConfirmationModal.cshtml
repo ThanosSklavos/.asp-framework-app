@@ -1,0 +1,32 @@
+﻿<!-- ConfirmationModal.cshtml -->
+@*this is a modal*@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Confirmation</h5>
+                <button type="button" onclick="closeModal()" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to proceed?
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="closeModal()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- Add your action here (e.g., a link or button to proceed) -->
+                <a href="https://asp.net" class="btn btn-primary">Proceed</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function funcModal() {
+        $('#myModal').modal('show');
+    }
+
+    function closeModal() {
+        $('#myModal').modal('hide');
+    }
+</script>

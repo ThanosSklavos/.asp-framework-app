@@ -1,12 +1,20 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Home Page";
+
 }
+@{
+    Html.RenderPartial("~/Views/ConfirmationModal.cshtml");
+}
+
 
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
         <h1 id="title">ASP.NET</h1>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+        @*<p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>*@
+        <!-- Modify the "Learn more" button to include an ID and data-toggle attribute -->
+        <p><a id="learnMoreBtn" onclick="funcModal()" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">Learn more &raquo;</a></p>
     </section>
 
     <div class="row">
@@ -31,3 +39,20 @@
         </section>
     </div>
 </main>
+
+
+
+
+
+<!-- jQuery -->
+<script src="~/Scripts/jquery-3.5.1.js"></script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="~/Scripts/bootstrap.bundle.js"></script>
+
+<script>
+    function funcModal() {
+        // Show the modal with the ID "myModal"
+        $('#myModal').modal('show');
+    }
+</script>

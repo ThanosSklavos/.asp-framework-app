@@ -1,0 +1,3 @@
+# Ignore database files
+WebApplicationNetFramework/App_Data/*.mdf
+WebApplicationNetFramework/App_Data/*.ldf
